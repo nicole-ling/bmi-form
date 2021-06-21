@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Checker</title>
+    <link rel="stylesheet" href="css/bmi.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+          <form action="/" method="post">
+            <h1>BMI Calculator</h1>
+            <p>Insert Your Age</p>
+            <input type="text" name="age" id="age" value="<%= formValues.age %>" onClick="this.select()" required>
+            <p>Insert Weight in Kg</p>
+            <input type="text" name="weight" id="weight" value="<%= formValues.weight %>" onClick="this.select()" required>
+            <br>
+            <p>Insert Height in cm</p>
+            <input type="text" name="height" id="height" value="<%= formValues.height %>" onClick="this.select()" required>
+            <br>
+            <input type="submit" class="button" value="Check">
+            <p id="result"><%= result %></p>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
